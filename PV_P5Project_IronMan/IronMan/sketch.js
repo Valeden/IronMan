@@ -14,7 +14,7 @@ function draw() {
     fill("#67C7EB"); // chestpiece light
     ellipse(250, 250, 275, 275); // chestpiece
   
-    //mouseIsPressed = true; // for testing
+    mouseIsPressed = true; // for testing
     if (mouseIsPressed == true)
     {
       fill("#000000"); // text color
@@ -54,15 +54,19 @@ function draw() {
       
       triangle(145, 185, 355, 185, 250, 372); // outer triangle
       
-      strokeWeight(15);
-      line(210, 130, 225, 180);// top left outer triangle connector
-      line(286, 130, 270, 180);// top right outer triangle connector
+      strokeWeight(25);
+      line(210, 130, 225, 177);// top left outer triangle connector
+      line(286, 130, 270, 177);// top right outer triangle connector
       
-      line(180, 260, 125, 270);// higher bottom outer triangle left connector
-      line(205, 300, 185, 357);// lower bottom outer triangle left connector
+      line(178, 260, 125, 270);// higher bottom left outer triangle connector
+      line(206, 309, 165, 345);// lower bottom left outer triangle connector
       
-      line(315, 260, 373, 270);// higher bottom outer triangle right connector
-      line(295, 300, 314, 357);// lower bottom outer triangle right connector
+      line(322, 260, 373, 275);// higher bottom right outer triangle connector
+      line(295, 310, 340, 340);// lower bottom right outer triangle connector
+      
+      stroke("#B97D10");
+      strokeWeight(10);
+      ellipse(250, 250, 275, 275);
       
       fill(0, 0, 0, opp); // text color
       textSize(40);
@@ -70,7 +74,7 @@ function draw() {
       textStyle(BOLD);
       textAlign(CENTER);
       strokeWeight(sOpp); // text outline
-      stroke(185, 125, 16); // gold outline
+      stroke("#B97D10"); // gold outline
       text("ILY3K", 250, 90);
     }
   else

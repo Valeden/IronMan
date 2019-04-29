@@ -13,7 +13,8 @@ function draw() {
     strokeWeight(10); // chestpiece outline
     fill("#67C7EB"); // chestpiece light
     ellipse(250, 250, 275, 275); // chestpiece
-	
+  
+    //mouseIsPressed = true; // for testing
     if (mouseIsPressed == true)
     {
       fill("#000000"); // text color
@@ -42,7 +43,27 @@ function draw() {
 	    
       fill("#AE1FB9"); // power purple
       ellipse(450,375,50,100); // power stone
-	    
+      
+      noFill();
+      strokeWeight(10); // traingle outline
+      triangle(200, 220, 300, 220, 250, 300); // center triangle
+      
+      line(200, 220, 145, 185);// left center triangle connector
+      line(300, 220, 355, 185);// right center triangle connector
+      line(250, 300, 250, 372);// bottom center triangle connector
+      
+      triangle(145, 185, 355, 185, 250, 372); // outer triangle
+      
+      strokeWeight(15);
+      line(210, 130, 225, 180);// top left outer triangle connector
+      line(286, 130, 270, 180);// top right outer triangle connector
+      
+      line(180, 260, 125, 270);// higher bottom outer triangle left connector
+      line(205, 300, 185, 357);// lower bottom outer triangle left connector
+      
+      line(315, 260, 373, 270);// higher bottom outer triangle right connector
+      line(295, 300, 314, 357);// lower bottom outer triangle right connector
+      
       fill(0, 0, 0, opp); // text color
       textSize(40);
       textFont("Times New Roman");

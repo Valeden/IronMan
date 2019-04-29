@@ -22,7 +22,7 @@ function draw() {
       textAlign(CENTER);
       noStroke(); //outline off
       text("I Am Iron Man", 250, 450);
-      strokeWeight(2); //outline on
+      strokeWeight(4); //outline on
       fill("#266EF6"); // space blue
       ellipse(50,75,50,100); //space stone
       fill("#0EB95B"); // time green

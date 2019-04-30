@@ -14,7 +14,7 @@ function draw() {
     fill("#67C7EB"); // chestpiece light
     ellipse(250, 250, 275, 275); // chestpiece
   
-    mouseIsPressed = true; // for testing
+    //mouseIsPressed = true; // for testing
     if (mouseIsPressed == true)
     {
       fill("#000000"); // text color
